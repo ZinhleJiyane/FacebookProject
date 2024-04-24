@@ -27,6 +27,7 @@
                                 <i class="fas fa-search text-muted"></i>
                             </div>
                         </span>
+                        <!--Search Bar-->
                         <span class="input-group-prepend d-none d-lg-block" id="searchMenu" data-bs-toggle="dropdown"
                             aria-expanded="false" type="button" data-bs-auto-close="outside">
                             <div class="input-group-text bg-gray border-0 rounded-pill"
@@ -41,7 +42,8 @@
                                 <input type="text" class="rounded-pill border-0 bg-gray dropdown-item"
                                     placeholder="Search Facebook..." autofocus>
                             </li>
-                            <li>
+                            
+                            <li>    <!--Previos Search Profiles (tap on the search bar to see them)-->
                             <li class="my-4">
                                 <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
                                     role="alert">
@@ -84,6 +86,7 @@
                         </ul>
                     </div>
                 </div>
+                <!--Profile on far right-->
                 <div class="col d-flex align-items-center justify-content-end">
                     <div class="d-none d-xl-flex align-items-center justify-content-center">
                         <img src="Icons/p4.jpg" alt="beautiful black girl" class="rounded-circle me-2"
@@ -95,6 +98,7 @@
                         aria-expanded="false" type="button">
                         <i class="fa fa-bars"></i>
                     </div>
+                    <!--Dropdown near the profile-->
                     <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="mainMenu"
                         style="width: 23em; max-height: 600px;">
                         <li class="dropdown-item p-1 rounded d-flex" type="button">
@@ -185,20 +189,15 @@
             </div>
         </div>
     </div>
-
+    <!--End of Profile-->
     <!--Js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-
     <!--End of Header-->
 
 </header>
 
 <body class="bg-gray">
-    <!--<img src="Icons/cover.jpg" style="min-height: 40px; min-width: 230px;" alt="beautiful pink flowers"> -->
 
+    <!--Right Side Bar - Setting Up my profile-->
     <div class="container-fluid">
         <div class="row">
             <div class="rightbar col-md-3">
@@ -206,7 +205,7 @@
                     <ul class="navbar-nav mt-4 ms-3 d-flex  flex-column pd-5 mb-5" style="padding-top: 56px;">
                              <li class="dropdown-item p-1 rounded">
                                 <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                    <div class="p-2">
+                                    <div class="p-2"> 
                                         <img src="Icons/p4.jpg" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
                                     </div>
                                     <div>
@@ -214,6 +213,7 @@
                                     </div>
                                 </a>
                              </li>
+                             <!--Side Icons below my profile-->
                              <li class="dropdown-item p-1 rounded">
                                 <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
                                     <div class="p-2">
@@ -314,6 +314,7 @@
                                   </div>     
                              </li>   
                              <hr class="m-0">
+                             <!--Shortcuts-->
                              <div class="d-flex align-items-center justify-content-between mt-2 text-muted edit-heading">
                                 <h4 class="m-0 text-muted">Your Shortcuts</h4>
                              </div>
@@ -352,16 +353,17 @@
                                     Privacy &#8226; Terms and Condictions &#8226; Cookies &#8226; Faxbook Copy Rights Reserved 2023 
                                 </p>
                              </div>
-                            
                        </ul>
                     </div>
             </div>
+
+            <!--Main Feed-->
             <div class="col-md-6">
                 <div class="d-flex flex-column justify-content-center w-100 mx-auto overflow-scroll"
                     style="padding-top: 56px; max-width:700px; width: 100%; z-index: 4">
                     <div class="bg-white p-3 mt-3 rounded border shadow">
                         <div class="d-flex" type="button">
-                            <div class="p-1">
+                            <div class="p-1">   <!--Profile-->
                                 <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2"
                                     style="width: 38px; height: 38px; object-fit: cover;">
                             </div>
@@ -381,7 +383,8 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
-
+                                    <!--Add a post-->
+                                       <!--Tap on the search bar of the main feed to add a post-->
                                     <div class="modal-body">
                                         <div class="my-1 p-1">
                                             <div class="d-flex flex-colomn">
@@ -428,14 +431,17 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                   
+                                        <!--Footer-->
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-primary w-100">Post</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                         <!--End of footer-->
                         <hr>
+                         <!--The icons that allow you to choose what kind of post you want to post-->
                         <div class="d-flex justify-content-center flex-column flex-lg-row mt-3">
                             <div class="d-flex align-items-center rounded dropdown-item" type="button">
                                 <i class="fas fa-video me-2 text-danger"></i>
@@ -451,6 +457,7 @@
                             </div>
                         </div>
                     </div>
+                     <!--Feed Posts-->
                     <div class="bg-white p-4 rounded shadow mt-3">
                         <div class="d-flex justify-content-between">
                             <div class="d-flex">
@@ -507,7 +514,7 @@
                                                 <p class="m-0">4 comments</p>
                                             </div>
                                         </h2>
-                                        <!--lik and share bar-->
+                                        <!--like and share bar-->
                                         <div class="d-flex justify-content-around">
                                             <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1"
                                                 type="button">
@@ -523,21 +530,18 @@
                                             </div>
                                         </div>
 
-                                        <!--Comments-->
+                                        <!--Comments - You can tap on the no. of comments or the comment button to view the comments -->
                                         <div id="post1" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                             data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
 
                                                 <div class="d-flex align-items-center my-1">
-                                                    <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2"
-                                                        style="width: 38px;height: 38px;object-fit: cover;">
+                                                    <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
 
                                                     <div class="p-3 rounded w-100 comment__ input">
                                                         <div class="d-flex justify-content-end">
-                                                            <i class="fas fa-ellipsis-h" type="button"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                                            <ul class="dropdown-menu border-0 shadow"
-                                                                aria-labelledby="post1Menu">
+                                                            <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
                                                                 <li class="d-flex align-items-center">
                                                                     <a href="#"
                                                                         class="dropdown-item d-flex align-items-center justify-content-around fs-7">
@@ -545,8 +549,7 @@
                                                                     </a>
                                                                 </li>
                                                                 <li class="d-flex align-items-center">
-                                                                    <a href="#"
-                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
                                                                         Delete
                                                                     </a>
                                                                 </li>
@@ -567,8 +570,7 @@
                                                         <div class="d-flex justify-content-end">
                                                             <i class="fas fa-ellipsis-h" type="button"
                                                                 data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                                            <ul class="dropdown-menu border-0 shadow"
-                                                                aria-labelledby="post1Menu">
+                                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
                                                                 <li class="d-flex align-items-center">
                                                                     <a href="#"
                                                                         class="dropdown-item d-flex align-items-center justify-content-around fs-7">
@@ -595,8 +597,7 @@
 
                                                     <div class="p-3 rounded w-100 comment__ input">
                                                         <div class="d-flex justify-content-end">
-                                                            <i class="fas fa-ellipsis-h" type="button"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                             <ul class="dropdown-menu border-0 shadow"
                                                                 aria-labelledby="post1Menu">
                                                                 <li class="d-flex align-items-center">
@@ -606,8 +607,7 @@
                                                                     </a>
                                                                 </li>
                                                                 <li class="d-flex align-items-center">
-                                                                    <a href="#"
-                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
                                                                         Delete
                                                                     </a>
                                                                 </li>
@@ -626,9 +626,7 @@
                                                             class="rounded-circle me-2"
                                                             style="width: 38px;height: 38px;object-fit: cover;">
                                                     </div>
-                                                    <input type="text"
-                                                        class="form-control border-0 rounded-pill bg-gray"
-                                                        placeholder="Write a comment">
+                                                    <input type="text" class="form-control border-0 rounded-pill bg-gray" placeholder="Write a comment">
                                                 </form>
 
                                             </div>
@@ -639,6 +637,7 @@
                             </div>
                         </div>
                     </div>
+                     <!-- Second Post-->
                     <div class="bg-white p-4 rounded shadow mt-3">
                         <div class="d-flex justify-content-between">
                             <div class="d-flex">
@@ -689,31 +688,27 @@
                                     <div class="accordion-item border-0">
 
                                         <h2 class="accordion-header" id="headingOne">
-                                            <div class="accordion-button collapsed d-flex justify-content-end"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#post1"
+                                            <div class="accordion-button collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#post1"
                                                 aria-expanded="true" aria-controls="post1">
                                                 <p class="m-0">4 comments</p>
                                             </div>
                                         </h2>
-                                        <!--lik and share bar-->
+                                        <!--like and share bar-->
                                         <div class="d-flex justify-content-around">
-                                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1"
-                                                type="button">
+                                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1" type="button">
                                                 <i class="fas fa-thumbs-up me-3"></i>
                                                 <p class="m-0">Like</p>
                                             </div>
 
-                                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1"
-                                                type="button" data-bs-toggle="collapse" data-bs-target="#post1"
-                                                aria-expanded="true" aria-controls="post1">
+                                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1" type="button" data-bs-toggle="collapse" data-bs-target="#post1" 
+                                            aria-expanded="true" aria-controls="post1">
                                                 <i class="fas fa-comment-alt me-3"></i>
                                                 <p class="m-0">Comment</p>
                                             </div>
                                         </div>
 
                                         <!--Comments-->
-                                        <div id="post1" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                            data-bs-parent="#accordionExample">
+                                        <div id="post1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
 
                                                 <div class="d-flex align-items-center my-1">
@@ -722,10 +717,8 @@
 
                                                     <div class="p-3 rounded w-100 comment__ input">
                                                         <div class="d-flex justify-content-end">
-                                                            <i class="fas fa-ellipsis-h" type="button"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                                            <ul class="dropdown-menu border-0 shadow"
-                                                                aria-labelledby="post1Menu">
+                                                            <i class="fas fa-ellipsis-h" type="button"  data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
                                                                 <li class="d-flex align-items-center">
                                                                     <a href="#"
                                                                         class="dropdown-item d-flex align-items-center justify-content-around fs-7">
@@ -748,15 +741,12 @@
                                                 </div>
 
                                                 <div class="d-flex align-items-center my-1">
-                                                    <img src="Icons/p16.jpg" alt="picture" class="rounded-circle me-2"
-                                                        style="width: 38px;height: 38px;object-fit: cover;">
+                                                    <img src="Icons/p16.jpg" alt="picture" class="rounded-circle me-2"  style="width: 38px;height: 38px;object-fit: cover;">
 
                                                     <div class="p-3 rounded w-100 comment__ input">
                                                         <div class="d-flex justify-content-end">
-                                                            <i class="fas fa-ellipsis-h" type="button"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                                            <ul class="dropdown-menu border-0 shadow"
-                                                                aria-labelledby="post1Menu">
+                                                            <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
                                                                 <li class="d-flex align-items-center">
                                                                     <a href="#"
                                                                         class="dropdown-item d-flex align-items-center justify-content-around fs-7">
@@ -783,8 +773,7 @@
 
                                                     <div class="p-3 rounded w-100 comment__ input">
                                                         <div class="d-flex justify-content-end">
-                                                            <i class="fas fa-ellipsis-h" type="button"
-                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <i class="fas fa-ellipsis-h" type="button"  data-bs-toggle="dropdown" aria-expanded="false"></i>
                                                             <ul class="dropdown-menu border-0 shadow"
                                                                 aria-labelledby="post1Menu">
                                                                 <li class="d-flex align-items-center">
@@ -810,13 +799,9 @@
 
                                                 <form class="form d-flex my-1">
                                                     <div>
-                                                        <img src="Icons/p17.jpg" alt="picture"
-                                                            class="rounded-circle me-2"
-                                                            style="width: 38px;height: 38px;object-fit: cover;">
+                                                        <img src="Icons/p17.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
                                                     </div>
-                                                    <input type="text"
-                                                        class="form-control border-0 rounded-pill bg-gray"
-                                                        placeholder="Write a comment">
+                                                    <input type="text" class="form-control border-0 rounded-pill bg-gray" placeholder="Write a comment">
                                                 </form>
 
                                             </div>
@@ -828,7 +813,7 @@
                         </div>
                     </div>
                 </div>
-                </div>div
+                </div>
                 <div class="leftbar col-md-3">
                     <div class=" d-xxl-block h-100 fixed-top end-0 overflow-scroll"
                         style="max-width: 325px; width: 100%;z-index: 4; padding-top: 56px; left: initial !important;">
@@ -848,6 +833,7 @@
                             </li>
                         </div>
                         <hr class="m-0">
+                         <!--Dropdown on the right bar -->
                         <div class="d-flex align-items-center justify-content-between my-3">
                             <h6 class="text-muted fs-5 m-0">Contacts</h6>
                             <div class="text-muted">
@@ -861,12 +847,7 @@
                                     </div>
                                     <hr />
                                     <li>
-                                        <div class="
-                                    dropdown-item
-                                    d-flex
-                                    align-items-center
-                                    justify-content-between
-                                  ">
+                                        <div class="dropdown-item d-flex align-items-center justify-content-between ">
                                             <div class="d-flex align-items-center">
                                                 <i class="fas fa-phone-alt me-3"></i>
                                                 <p class="m-0">Incoming call sounds</p>
@@ -879,12 +860,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="
-                                    dropdown-item
-                                    d-flex
-                                    align-items-center
-                                    justify-content-between
-                                  ">
+                                        <div class="dropdown-item d-flex align-items-center justify-content-between ">
                                             <div class="d-flex align-items-center">
                                                 <i class="fas fa-spinner me-3"></i>
                                                 <p class="m-0">Pop-up new messages</p>
@@ -898,12 +874,7 @@
                                     </li>
                                     <hr class="m-0" />
                                     <li>
-                                        <div class="
-                            dropdown-item
-                            d-flex
-                            align-items-center
-                            justify-content-between
-                          ">
+                                        <div class="dropdown-item d-flex align-items-center justify-content-between ">
                                             <div class="d-flex align-items-center">
                                                 <i class="fas fa-toggle-off me-3"></i>
                                                 <p class="m-0">Turn Off Active Status</p>
@@ -917,6 +888,7 @@
                             </div>
                             </ul>
                         </div>
+                         <!--People who are online -->
                         <li class="dropdown-item rounded my-2 px-0" type="button">
                             <div class="d-flex align-items-center mx-2">
                                 <div class="position-relative">
@@ -1091,13 +1063,12 @@
                 </div>
         </div>
     </div>
+      <!--End of my code -->
+    <!--Js-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 
 </body>
-<footer>
-
-
-
-
-</footer>
-
 </html>
