@@ -21,7 +21,7 @@ Clone the Repository: Start by cloning this repository to your local machine usi
 <hr>
 Navigate to the Project Directory: Once the repository is cloned, navigate to the project directory using the cd command:
 <hr>
-cd Facebook
+cd FacebookProject
 <hr>
 Open the HTML File: Once inside the project directory, locate the index.html file and open it in your preferred web browser. You can do this by double-clicking the file or right-clicking and selecting "Open with" and choosing your web browser.
 Explore the App: You should now be able to explore the Facebook One-Page App! Navigate through the dropdown menus, view posts and comments, and interact with the content as desired.
