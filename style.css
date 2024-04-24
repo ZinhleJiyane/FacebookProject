@@ -1,0 +1,65 @@
+.overflow-scroll{
+    overflow-y: auto;
+    max-height: 10000px;
+    scrollbar-width: thin;
+}
+/* Header */
+.main{
+    background: white;
+    align-items: center;
+    min-height: 56px;
+    z-index: 5;
+}
+
+.main .faBook{
+    font-size: 3rem;
+}
+
+.main .Searchmuted{
+    min-height: 40px;
+}
+
+.main .Searchmuted2{
+    min-height: 40px; 
+    min-width: 230px;
+    background: gray;
+    border: 0;
+}
+
+.main .DropDown1{
+    border: 0;
+    padding: 3%;
+    overflow: auto;
+    width: 20em; 
+    max-height: 600px;
+}
+
+.main .searchIcon{
+    width: 35px; 
+    height: 35px; 
+    object-fit: cover;
+}
+
+/* left*/
+
+.post__comment .accordion-button:after{
+    margin-left: 0 !important;
+    display: none !important;
+}
+.post__comment .accordion-button:hover{
+    background: transparent !important;
+    border-color: transparent !important;
+}
+.post__comment .accordion-button:not(.collapsed){
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 700px){
+    .rightbar{
+        display: none;
+    }
+    .leftbar{
+        display: none;
+    }
+}
