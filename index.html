@@ -1,964 +1,1096 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compativle" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Facebook Clone</title>
 </head>
 <header class="bg-grey">
 
+    <!--Start of Header-->
 
-<!--Starting app-->
-
-<div class="main d-flex fixed-top shadow">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col d-flex align-items-center">
-             <i class="faBook fab fa-facebook text-primary"></i>
-             <div class="input-group ms-2 justify-content-center">
-                <span class="input-group-prepend d-lg-none" id="searchMenu" data-bs-toggle="dropdown" aria-expanded="false" type="button" data-bs-auto-close="outside">
-                    <div class=" Searchmuted input-group-text bg-grey border-0 rounded-circle">
-                        <i class="fas fa-search text-muted"></i>
-                    </div>
-                </span>
-                <span class="input-group-prepend d-none d-lg-block" id="searchMenu" data-bs-toggle="dropdown" aria-expanded="false" type="button" data-bs-auto-close="outside">
-                    <div class="Searchmuted2 input-group-text border-0 rounded-pill">
-                        <i class="fas fa-search me-2 text-muted"></i>
-                        <p class="m-0 fs-7 text-muted">Search Facebook</p>
-                    </div>
-                </span>
-                    <ul class="DropDown1 dropdown-menu shadow" aria-labelledby="searchMenu">
-                     <li>
-                        <input type="text" class="rounded-pill border-0 bg-gray dropdown-item" placeholder="Search Facebook..." autofocus>
-                     </li>
-                     <li>
-                        <li class="my-4">
-                            <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between" role="alert">
-                                <div class="searchIcon d-flx align-items-center">
-                                    <img src="Icons/p1.jpg" alt="avatar" class="rounded-circle me-2">
-                                    <p class="m-0">Linda</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                              </div>
-                        </li>
-                        <li class="my-4">
-                            <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between" role="alert">
-                                <div class=" searchIcon d-flx align-items-center">
-                                    <img src="Icons/p2.jpg" alt="avatar" class="rounded-circle me-2">
-                                    <p class="m-0">Matthew</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                              </div>
-                        </li>
-                     </li>
-                     <li class="my-4">
-                        <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between" role="alert">
-                            <div class="searchIcon d-flx align-items-center">
-                                <img src="Icons/p3.jpg" alt="avatar" class="rounded-circle me-2">
-                                <p class="m-0">Isabella</p>
+    <div class="bg-white d-flex align-items-center fixed-top shadow" style="min-height: 56px; z-index: 5;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col d-flex align-items-center">
+                    <i class="fab fa-facebook text-primary" style="font-size: 3rem;"></i>
+                    <div class="input-group ms-2 justify-content-center">
+                        <span class="input-group-prepend d-lg-none" id="searchMenu" data-bs-toggle="dropdown"
+                            aria-expanded="false" type="button" data-bs-auto-close="outside">
+                            <div class="input-group-text bg-grey border-0 rounded-circle" style="min-height: 40px;">
+                                <i class="fas fa-search text-muted"></i>
                             </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                          </div>
-                    </li>
-                 </li>
-                     </li>
-                    </ul>
-             </div>
-             </div>
-            <div class="col d-flex align-items-center justify-content-end">
-            <div class="d-none d-xl-flex align-items-center justify-content-center">
-                 <img src="Icons/p4.jpg" alt="beautiful black girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                 <p class="m-0">Brigette</p>
-            </div>
-            <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray" style="width:38px; height: 38px; object-fit: cover;" id="mainMenu" data-bs-toggle="dropdown" aria-expanded="false" type="button">
-                <i class="fa fa-bars"></i>
-            </div>
-            <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="mainMenu" style="width: 23em; max-height: 600px;">
-               <li class="dropdown-item p-1 rounded d-flex" type="button">
-                <img src="Icons/p4.jpg" alt="beautiful black girl" class="rounded-circle me-2" style="width: 45px; height: 45px; object-fit: cover;">
-                <div>
-                    <p class="m-0">Brigette</p>
-                    <p class="m-0 text-muted">See your profile</p>
+                        </span>
+                        <span class="input-group-prepend d-none d-lg-block" id="searchMenu" data-bs-toggle="dropdown"
+                            aria-expanded="false" type="button" data-bs-auto-close="outside">
+                            <div class="input-group-text bg-gray border-0 rounded-pill"
+                                style="min-height: 40px; min-width: 230px;">
+                                <i class="fas fa-search me-2 text-muted"></i>
+                                <p class="m-0 fs-7 text-muted">Search Facebook</p>
+                            </div>
+                        </span>
+                        <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="searchMenu"
+                            sytle="width: 20em; max-height: 600px;">
+                            <li>
+                                <input type="text" class="rounded-pill border-0 bg-gray dropdown-item"
+                                    placeholder="Search Facebook..." autofocus>
+                            </li>
+                            <li>
+                            <li class="my-4">
+                                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                                    role="alert">
+                                    <div class="d-flx align-items-center">
+                                        <img src="Icons/p1.jpg" alt="avatar" class="rounded-circle me-2"
+                                            style="width: 35px; height: 35px; object-fit: cover;">
+                                        <p class="m-0">Linda</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            </li>
+                            <li class="my-4">
+                                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                                    role="alert">
+                                    <div class="d-flx align-items-center">
+                                        <img src="Icons/p2.jpg" alt="avatar" class="rounded-circle me-2"
+                                            style="width: 35px; height: 35px; object-fit: cover;">
+                                        <p class="m-0">Matthew</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            </li>
+                            </li>
+                            <li class="my-4">
+                                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                                    role="alert">
+                                    <div class="d-flx align-items-center">
+                                        <img src="Icons/p3.jpg" alt="avatar" class="rounded-circle me-2"
+                                            style="width: 35px; height: 35px; object-fit: cover;">
+                                        <p class="m-0">Isabella</p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                </div>
+                            </li>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-               </li>
-               <hr>
-                <div>
-                    <li class="my-2 p-1">
-                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3" style="width: 38px;height: 38px;">
-                                <i class="fas fa-chart-pie"></i>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center w-100 ms-3">
-                                <p class="m-0">Meta Business Suite</p>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="my-2 p-1">
-                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3" style="width: 38px;height: 38px;">
-                                <i class="fas fa-cog"></i>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center w-100 ms-3">
-                                <p class="m-0">Settings & privacy</p>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="my-2 p-1">
-                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3" style="width: 38px;height: 38px;">
-                                <i class="fas fa-info-circle"></i>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center w-100 ms-3">
-                                <p class="m-0">Help & support</p>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="my-2 p-1">
-                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3" style="width: 38px;height: 38px;">
-                                <i class="fas fa-moon"></i>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center w-100 ms-3">
-                                <p class="m-0">Display & accessibility</p>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="my-2 p-1">
-                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3" style="width: 38px;height: 38px;">
-                                <i class="fas fa-comments"></i>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center w-100 ms-3">
-                                <p class="m-0">Give feedback</p>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="my-2 p-1">
-                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3" style="width: 38px;height: 38px;">
-                                <i class="fas fa-sign-out-alt"></i>
-                            </div>
+                <div class="col d-flex align-items-center justify-content-end">
+                    <div class="d-none d-xl-flex align-items-center justify-content-center">
+                        <img src="Icons/p4.jpg" alt="beautiful black girl" class="rounded-circle me-2"
+                            style="width: 38px; height: 38px; object-fit: cover;">
+                        <p class="m-0">Brigette</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray"
+                        style="width:38px; height: 38px; object-fit: cover;" id="mainMenu" data-bs-toggle="dropdown"
+                        aria-expanded="false" type="button">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="mainMenu"
+                        style="width: 23em; max-height: 600px;">
+                        <li class="dropdown-item p-1 rounded d-flex" type="button">
+                            <img src="Icons/p4.jpg" alt="beautiful black girl" class="rounded-circle me-2"
+                                style="width: 45px; height: 45px; object-fit: cover;">
                             <div>
-                                <p class="m-0">Log Out</p>
+                                <p class="m-0">Brigette</p>
+                                <p class="m-0 text-muted">See your profile</p>
                             </div>
-                        </a>
-                    </li>
+                        </li>
+                        <hr>
+                        <div>
+                            <li class="my-2 p-1">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"
+                                        style="width: 38px;height: 38px;">
+                                        <i class="fas fa-chart-pie"></i>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 ms-3">
+                                        <p class="m-0">Meta Business Suite</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2 p-1">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"
+                                        style="width: 38px;height: 38px;">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 ms-3">
+                                        <p class="m-0">Settings & privacy</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2 p-1">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"
+                                        style="width: 38px;height: 38px;">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 ms-3">
+                                        <p class="m-0">Help & support</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2 p-1">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"
+                                        style="width: 38px;height: 38px;">
+                                        <i class="fas fa-moon"></i>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 ms-3">
+                                        <p class="m-0">Display & accessibility</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2 p-1">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"
+                                        style="width: 38px;height: 38px;">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center w-100 ms-3">
+                                        <p class="m-0">Give feedback</p>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2 p-1">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"
+                                        style="width: 38px;height: 38px;">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Log Out</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </div>
+
+                    </ul>
                 </div>
-                
-            </ul>
-        </div>
+            </div>
         </div>
     </div>
-    </div>
-</div>
-
-
 
     <!--Js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="./main.js"></script>
+
+    <!--End of Header-->
 
 </header>
 
 <body class="bg-gray">
-<!--<img src="Icons/cover.jpg" style="min-height: 40px; min-width: 230px;" alt="beautiful pink flowers"> -->
+    <!--<img src="Icons/cover.jpg" style="min-height: 40px; min-width: 230px;" alt="beautiful pink flowers"> -->
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="rightbar col-md-3">
-            <div class="d-xxl-block h-100 fixed-top overflow-scroll" style="max-width: 300px; width: 100%; z-index: 4">
-                <ul class="navbar-nav mt-4 ms-3 d-flex  flex-column pd-5 mb-5" style="padding-top: 56px;">
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/p4.jpg" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                                </div>
-                                <div>
-                                    <p class="m-0">Brigette</p>
-                                </div>
-                            </a>
-                         </li>
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/friend.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
-                                </div>
-                                <div>
-                                    <p class="m-0">Friends</p>
-                                    <i class="fas fa-circle text-primary" style="font-size: .5rem;"></i>
-                                    <span class="fs-0.1 text-primary">5 new</span>
-                                </div>
-                            </a>
-                         </li>
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/groups.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
-                                </div>
-                                <div>
-                                    <p class="m-0">Groups</p>
-                                </div>
-                            </a>
-                         </li>
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/facebook-page.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
-                                </div>
-                                <div>
-                                    <p class="m-0">Pages</p>
-                                </div>
-                            </a>
-                         </li>
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/shop.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
-                                </div>
-                                <div>
-                                    <p class="m-0">Marketplace</p>
-                                </div>
-                            </a>
-                         </li>
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/facebook.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
-                                </div>
-                                <div>
-                                    <p class="m-0">Watch</p>
-                                    <i class="fas fa-circle text-primary" style="font-size: .5rem;"></i>
-                                    <span class="fs-0.1 text-primary">12+ new videos</span>
-                                </div>
-                            </a>
-                         </li>
-                         <li class="p-1" type="button">
-                            <div id="accordionExample">
-                                <div> 
-                                  <div>
-                                    <div class="d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                      <div class="p-2">
-                                        <i class="fas fa-chevron-down rounded-circle p-2" style="background-color: #d5d5d5 !important;"></i>
-                                      </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="rightbar col-md-3">
+                <div class="d-xxl-block h-100 fixed-top overflow-scroll" style="max-width: 300px; width: 100%; z-index: 4">
+                    <ul class="navbar-nav mt-4 ms-3 d-flex  flex-column pd-5 mb-5" style="padding-top: 56px;">
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/p4.jpg" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Brigette</p>
+                                    </div>
+                                </a>
+                             </li>
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/friend.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Friends</p>
+                                        <i class="fas fa-circle text-primary" style="font-size: .5rem;"></i>
+                                        <span class="fs-0.1 text-primary">5 new</span>
+                                    </div>
+                                </a>
+                             </li>
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/groups.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Groups</p>
+                                    </div>
+                                </a>
+                             </li>
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/facebook-page.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Pages</p>
+                                    </div>
+                                </a>
+                             </li>
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/shop.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Marketplace</p>
+                                    </div>
+                                </a>
+                             </li>
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/facebook.png" class="" alt="beautiful girl" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover">
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Watch</p>
+                                        <i class="fas fa-circle text-primary" style="font-size: .5rem;"></i>
+                                        <span class="fs-0.1 text-primary">12+ new videos</span>
+                                    </div>
+                                </a>
+                             </li>
+                             <li class="p-1" type="button">
+                                <div id="accordionExample">
+                                    <div> 
                                       <div>
-                                        <p class="m-0">See More</p>
+                                        <div class="d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                          <div class="p-2">
+                                            <i class="fas fa-chevron-down rounded-circle p-2" style="background-color: #d5d5d5 !important;"></i>
+                                          </div>
+                                          <div>
+                                            <p class="m-0">See More</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div>
+                                            <div class="div d-flex align-items-center dropdown-item p-0 m-0">
+                                                <div class="p-2">
+                                                    <img src="Icons/calendar.png" alt="calendar" style="width: 38px; height: 38px; object-fit: cover;">
+                                                </div>
+                                                <div>
+                                                    <p class="m-0">Events</p>
+                                                </div>
+                                            </div>
+                                            <div class="div d-flex align-items-center dropdown-item p-0 m-0">
+                                                <div class="p-2">
+                                                    <img src="Icons/messenger.png" alt="messenger" style="width: 38px; height: 38px; object-fit: cover;">
+                                                </div>
+                                                <div>
+                                                    <p class="m-0">Messenger</p>
+                                                </div>
+                                            </div>
+                                            <div class="div d-flex align-items-center dropdown-item p-0 m-0">
+                                                <div class="p-2">
+                                                    <img src="Icons/feed.png" alt="feed" style="width: 38px; height: 38px; object-fit: cover;">
+                                                </div>
+                                                <div>
+                                                    <p class="m-0">Feeds</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                       </div>
                                     </div>
-                                </div>
-                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  </div>     
+                             </li>   
+                             <hr class="m-0">
+                             <div class="d-flex align-items-center justify-content-between mt-2 text-muted edit-heading">
+                                <h4 class="m-0 text-muted">Your Shortcuts</h4>
+                             </div>
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/p5.jpg" alt="beautiful girl" class="rounded border border1 border-secondary me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    </div>
                                     <div>
-                                        <div class="div d-flex align-items-center dropdown-item p-0 m-0">
-                                            <div class="p-2">
-                                                <img src="Icons/calendar.png" alt="calendar" style="width: 38px; height: 38px; object-fit: cover;">
-                                            </div>
-                                            <div>
-                                                <p class="m-0">Events</p>
-                                            </div>
-                                        </div>
-                                        <div class="div d-flex align-items-center dropdown-item p-0 m-0">
-                                            <div class="p-2">
-                                                <img src="Icons/messenger.png" alt="messenger" style="width: 38px; height: 38px; object-fit: cover;">
-                                            </div>
-                                            <div>
-                                                <p class="m-0">Messenger</p>
-                                            </div>
-                                        </div>
-                                        <div class="div d-flex align-items-center dropdown-item p-0 m-0">
-                                            <div class="p-2">
-                                                <img src="Icons/feed.png" alt="feed" style="width: 38px; height: 38px; object-fit: cover;">
-                                            </div>
-                                            <div>
-                                                <p class="m-0">Feeds</p>
-                                            </div>
-                                        </div>
-                                        
+                                        <p class="m-0">Claira Smith</p>
                                     </div>
-                                  </div>
-                                </div>
-                              </div>     
-                         </li>   
-                         <hr class="m-0">
-                         <div class="d-flex align-items-center justify-content-between mt-2 text-muted edit-heading">
-                            <h4 class="m-0 text-muted">Your Shortcuts</h4>
-                         </div>
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/p5.jpg" alt="beautiful girl" class="rounded border border1 border-secondary me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                                </div>
-                                <div>
-                                    <p class="m-0">Claira Smith</p>
-                                </div>
-                            </a>
-                         </li>
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/p6.jpg" alt="beautiful girl" class="rounded border border1 border-secondary me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                                </div>
-                                <div>
-                                    <p class="m-0">John Doe</p>
-                                </div>
-                            </a>
-                         </li>
-                         <li class="dropdown-item p-1 rounded">
-                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
-                                <div class="p-2">
-                                    <img src="Icons/p7.jpg" alt="beautiful girl" class="rounded border border1 border-secondary me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                                </div>
-                                <div>
-                                    <p class="m-0">Hazel Snow</p>
-                                </div>
-                            </a>
-                         </li>
-                         <div class="p-2 mt-5">
-                            <p class="text-muted fs-7">
-                                Privacy &#8226; Terms and Condictions &#8226; Cookies &#8226; Faxbook Copy Rights Reserved 2023 
-                            </p>
-                         </div>
-                        
-                   </ul>
-                </div>
-        </div>
-        <div class="col-md-6">
-            <div class="d-flex flex-column justify-content-center w-100 mx-auto overflow-scroll" style="padding-top: 56px; max-width:700px; width: 100%; z-index: 4">
-                 <div class="bg-white p-3 mt-3 rounded border shadow">
-                <div class="d-flex" type="button">
-                    <div class="p-1">
-                        <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                    </div>
-                    <input class="form-control rounded-pill border-0 bg-gray" placeholder="What's on your mind, Brigette?" data-bs-toggle="modal" data-bs-target="#createModal">
-                </div>
-                   
-  <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true" data-bs-backdrop="false">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-
-        <div class="modal-header align-items-center">
-          <h5 class="text-dark text-center w-100 m-0" id="exampleModalLabel">Create Post</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-        <div class="modal-body">
-            <div class="my-1 p-1">
-              <div class="d-flex flex-colomn">
-                  <div class="d-flex align-items-center">
-                      <div class="p-2">
-                          <img src="Icons/p4.jpg" alt="picture" class="rounded-circle" style="width: 30px; height: 30px; object-fit: cover;">
-                      </div>
-                      <div>
-                          <p class="m-0 fw-bold">Brigette</p>
-                          <select class="form-select border-0 bg-gray w-75 fs-7 me-2">
-                              <option value="public">Public</option>
-                              <option value="Pin To Top">Pin To Top</option>
-                              <option value="Hide">Hide</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div>
-                    <textarea id="" cols="30" rows="5" class="form-control border-0"></textarea>
-                </div>
-                  
-                  <div class="d-flex align-items-center justify-content-between">
-                      <img src="Icons/wheel.png" alt="bpicture" type="button" style="width: 20px; height: 20px; object-fit: cover;">
-                      <i class="far fa-laugh-wink fs-5 text-muted" type="button"></i>
-                  </div>
-                     <div class="d-flex justify-content-between border border-1 border-light rounded p-3 mt-3">
-                      <p class="m-0">Add to your post</p>
-                      <div>
-                          <i class="fas fa-image fs-5 text-success mx-1" type="button"></i>
-                          <i class="fas fa-user-checkfs-5 text-success mx-1" type="button"></i>
-                          <i class="fas fa-smile fs-5 text-success mx-1" type="button"></i>
-                          <i class="fas fa-map-marker fs-5 text-success mx-1" type="button"></i>
-                          <i class="fas fa-ellipsis-h fs-5 text-success mx-1" type="button"></i>
-                      </div>
-                     </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary w-100">Post</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-               <div class="d-flex justify-content-center flex-column flex-lg-row mt-3">
-                      <div class="d-flex align-items-center rounded dropdown-item" type="button">
-                          <i class="fas fa-video me-2 text-danger"></i>
-                          <p class="m-0 text-muted">Live Video</p>
-                      </div>
-                      <div class="d-flex align-items-center rounded dropdown-item" type="button">
-                          <i class="fas fa-photo-video me-2 text-success"></i>
-                          <p class="m-0 text-muted">Photo/Video</p>
-                      </div>
-                      <div class="d-flex align-items-center rounded dropdown-item" type="button">
-                          <i class="fas fa-smile me-2 text-warning"></i>
-                          <p class="m-0 text-muted">Feeling/Activity</p>
-                      </div>
-                  </div>                
-                </div>
-                <div class="bg-white p-4 rounded shadow mt-3">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex">
-                            <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <div>
-                                <p class="m-0 fw-bold">Brigette</p>
-                                <span class="text-muted.fs-7">10h</span>
-                            </div>
-                        </div>
-                        <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="post1Menu"></i>
-                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
-                            <li class="d-flex align-items-center">
-                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                    Edit Post
                                 </a>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                    Delete Post
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mt-3">
-                        <div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sed reiciendis est corporis voluptatibus vero a illo aperiam adipisci eius error molestias suscipit, laudantium commodi rerum ad tempore! Consequuntur, molestiae?</p>
-                            <img src="Icons/p20.jpg" alt="picture" style="max-width: 100%; height: auto;">
-                        </div>
-                      <div class="position-relative mt-3 post__comment">
-
-                        <div class="d-flex align-items-center position-absolute top-0 start-2" style="height: 50px; z-index: 5;">
-                        <div class="me-2">
-                            <i class="fas fa-thumbs-up text-primary"></i>
-                            <i class="fab fa-gratipay text-danger"></i>
-                            <i class="fas fa-grin-squint text-warning"></i>
-                        </div>
-                        <p class="m-0 text-muted fs-7">Linda, John and 10k others</p>
-                        </div>
-
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item border-0">
-
-                              <h2 class="accordion-header" id="headingOne">
-                                <div class="accordion-button collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#post1" aria-expanded="true" aria-controls="post1">
-                                  <p class="m-0">4 comments</p>
-                                </div>
-                              </h2>
-                              <!--lik and share bar-->
-                              <div class="d-flex justify-content-around">
-                                <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1" type="button">
-                                    <i class="fas fa-thumbs-up me-3"></i>
-                                    <p class="m-0">Like</p>
-                                </div>
-                                
-                                    <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1" type="button" data-bs-toggle="collapse" data-bs-target="#post1" aria-expanded="true" aria-controls="post1">
-                                        <i class="fas fa-comment-alt me-3"></i>
-                                        <p class="m-0">Comment</p>
+                             </li>
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/p6.jpg" alt="beautiful girl" class="rounded border border1 border-secondary me-2" style="width: 38px; height: 38px; object-fit: cover;">
                                     </div>
-                                </div>
-                              
-                              <!--Comments-->
-                              <div id="post1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-
-                                  <div class="d-flex align-items-center my-1">
-                                    <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
-
-                                    <div class="p-3 rounded w-100 comment__ input">
-                                         <div class="d-flex justify-content-end">
-                                            <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
-                                                <li class="d-flex align-items-center">
-                                                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                        Edit
-                                                    </a>
-                                                </li>
-                                                <li class="d-flex align-items-center">
-                                                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                        Delete
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                         </div>
-                                         <p class="fw-bold m-0">Brigette</p>
-                                         <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim!</p>
-                                    </div>
-
-                                  </div>
-
-                                  <div class="d-flex align-items-center my-1">
-                                    <img src="Icons/p5.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
-
-                                    <div class="p-3 rounded w-100 comment__ input">
-                                         <div class="d-flex justify-content-end">
-                                            <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
-                                                <li class="d-flex align-items-center">
-                                                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                        Reply
-                                                    </a>
-                                                </li>
-                                                <li class="d-flex align-items-center">
-                                                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                        Delete
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                         </div>
-                                         <p class="fw-bold m-0">Hazel Snow</p>
-                                         <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim!</p>
-                                    </div>
-
-                                  </div>
-                                  <div class="d-flex align-items-center my-1">
-                                    <img src="Icons/p2.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
-
-                                    <div class="p-3 rounded w-100 comment__ input">
-                                         <div class="d-flex justify-content-end">
-                                            <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
-                                                <li class="d-flex align-items-center">
-                                                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                        Reply
-                                                    </a>
-                                                </li>
-                                                <li class="d-flex align-items-center">
-                                                    <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                        Delete
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                         </div>
-                                         <p class="fw-bold m-0">John Doe</p>
-                                         <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim!</p>
-                                    </div>
-
-                                  </div>
-
-                                   <form class="form d-flex my-1">
                                     <div>
-                                        <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
+                                        <p class="m-0">John Doe</p>
                                     </div>
-                                    <input type="text" class="form-control border-0 rounded-pill bg-gray" placeholder="Write a comment">
-                                </form>
-
-                                </div>
-                              </div>
-                          </div>
-                          <!--end of accord-->
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <div class="bg-white p-4 rounded shadow mt-3">
-                <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                        <img src="Icons/p15.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                        <div>
-                            <p class="m-0 fw-bold">Susan Tuks</p>
-                            <span class="text-muted.fs-7">5h</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="post1Menu"></i>
-                    <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
-                        <li class="d-flex align-items-center">
-                            <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                Edit Post
-                            </a>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                Delete Post
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mt-3">
-                    <div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sed reiciendis est corporis voluptatibus vero a illo aperiam adipisci eius error molestias suscipit, laudantium commodi rerum ad tempore! Consequuntur, molestiae?</p>
-                        <img src="Icons/p17.jpg" alt="picture" style="max-width: 100%; height: auto;">
-                    </div>
-                  <div class="position-relative mt-3 post__comment">
-
-                    <div class="d-flex align-items-center position-absolute top-0 start-2" style="height: 50px; z-index: 5;">
-                    <div class="me-2">
-                        <i class="fas fa-thumbs-up text-primary"></i>
-                        <i class="fab fa-gratipay text-danger"></i>
-                        <i class="fas fa-grin-squint text-warning"></i>
-                    </div>
-                    <p class="m-0 text-muted fs-7">Lucky, Hazel and 100k others</p>
-                    </div>
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item border-0">
-
-                          <h2 class="accordion-header" id="headingOne">
-                            <div class="accordion-button collapsed d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#post1" aria-expanded="true" aria-controls="post1">
-                              <p class="m-0">4 comments</p>
-                            </div>
-                          </h2>
-                          <!--lik and share bar-->
-                          <div class="d-flex justify-content-around">
-                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1" type="button">
-                                <i class="fas fa-thumbs-up me-3"></i>
-                                <p class="m-0">Like</p>
-                            </div>
+                                </a>
+                             </li>
+                             <li class="dropdown-item p-1 rounded">
+                                <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="Icons/p7.jpg" alt="beautiful girl" class="rounded border border1 border-secondary me-2" style="width: 38px; height: 38px; object-fit: cover;">
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Hazel Snow</p>
+                                    </div>
+                                </a>
+                             </li>
+                             <div class="p-2 mt-5">
+                                <p class="text-muted fs-7">
+                                    Privacy &#8226; Terms and Condictions &#8226; Cookies &#8226; Faxbook Copy Rights Reserved 2023 
+                                </p>
+                             </div>
                             
-                                <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1" type="button" data-bs-toggle="collapse" data-bs-target="#post1" aria-expanded="true" aria-controls="post1">
-                                    <i class="fas fa-comment-alt me-3"></i>
-                                    <p class="m-0">Comment</p>
-                                </div>
-                            </div>
-                          
-                          <!--Comments-->
-                          <div id="post1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-
-                              <div class="d-flex align-items-center my-1">
-                                <img src="Icons/p15.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
-
-                                <div class="p-3 rounded w-100 comment__ input">
-                                     <div class="d-flex justify-content-end">
-                                        <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
-                                            <li class="d-flex align-items-center">
-                                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                    Edit
-                                                </a>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                    Delete
-                                                </a>
-                                            </li>
-                                        </ul>
-                                     </div>
-                                     <p class="fw-bold m-0">Susan Tuks</p>
-                                     <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim!</p>
-                                </div>
-
-                              </div>
-
-                              <div class="d-flex align-items-center my-1">
-                                <img src="Icons/p16.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
-
-                                <div class="p-3 rounded w-100 comment__ input">
-                                     <div class="d-flex justify-content-end">
-                                        <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
-                                            <li class="d-flex align-items-center">
-                                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                    Reply
-                                                </a>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                    Delete
-                                                </a>
-                                            </li>
-                                        </ul>
-                                     </div>
-                                     <p class="fw-bold m-0">Lucky M</p>
-                                     <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim!</p>
-                                </div>
-
-                              </div>
-                              <div class="d-flex align-items-center my-1">
-                                <img src="Icons/p2.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
-
-                                <div class="p-3 rounded w-100 comment__ input">
-                                     <div class="d-flex justify-content-end">
-                                        <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
-                                            <li class="d-flex align-items-center">
-                                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                    Reply
-                                                </a>
-                                            </li>
-                                            <li class="d-flex align-items-center">
-                                                <a href="#" class="dropdown-item d-flex align-items-center justify-content-around fs-7">
-                                                    Delete
-                                                </a>
-                                            </li>
-                                        </ul>
-                                     </div>
-                                     <p class="fw-bold m-0">Brigette J</p>
-                                     <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim!</p>
-                                </div>
-
-                              </div>
-
-                               <form class="form d-flex my-1">
-                                <div>
-                                    <img src="Icons/p17.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px;height: 38px;object-fit: cover;">
-                                </div>
-                                <input type="text" class="form-control border-0 rounded-pill bg-gray" placeholder="Write a comment">
-                            </form>
-
-                            </div>
-                          </div>
-                      </div>
-                      <!--end of accord-->
-                  </div>
-                </div>
+                       </ul>
+                    </div>
             </div>
-          </div>
-              </div>
-        <div class="leftbar col-md-3">
-             <div class=" d-xxl-block h-100 fixed-top end-0 overflow-scroll" style="max-width: 325px; width: 100%;z-index: 4; padding-top: 56px; left: initial !important;">
-                <div class="p-3 mt-4">
-                    <h6 class="text-muted fs-5 m-0">Birthdays</h6>
-                    <li class="dropdown-item my-2 d-flex justify-content-between">
-                        <div class="div d-flex align-items-center dropdown-item p-0 m-0">
-                            <div class="p-2">
-                                <img src="Icons/gift.png" alt="messenger" style="width: 38px; height: 38px; object-fit: cover;">
+            <div class="col-md-6">
+                <div class="d-flex flex-column justify-content-center w-100 mx-auto overflow-scroll"
+                    style="padding-top: 56px; max-width:700px; width: 100%; z-index: 4">
+                    <div class="bg-white p-3 mt-3 rounded border shadow">
+                        <div class="d-flex" type="button">
+                            <div class="p-1">
+                                <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2"
+                                    style="width: 38px; height: 38px; object-fit: cover;">
                             </div>
-                            <div>
-                                <p class="m-0"><strong>Kim Berry</strong> and <strong>20 others</strong><br> have their birthdays today. </p>
-                            </div>
+                            <input class="form-control rounded-pill border-0 bg-gray"
+                                placeholder="What's on your mind, Brigette?" data-bs-toggle="modal"
+                                data-bs-target="#createModal">
                         </div>
-                    </li>
-                </div>
-                <hr class="m-0">
-                <div class="d-flex align-items-center justify-content-between my-3">
-                    <h6 class="text-muted fs-5 m-0">Contacts</h6>
-                    <div class="text-muted">
-                        <i class="fas fa-search mx-2" type="button"></i>
-                        <i class="fas fa-ellipsis-h pointer text-muted mx-2" type="button"  data-bs-toggle="dropdown"></i>
-                        <ul class="dropdown-menu shadow" style="width: 18em">
-                            <div class="p-2">
-                                <h5>Chat Settings</h5>
-                                <span class="text-muted fs-7"
-                                  >Customize your Messenger experience.</span
-                                >
-                              </div>
-                              <hr /> 
-                              <li>
-                                <div
-                                  class="
-                                    dropdown-item
-                                    d-flex
-                                    align-items-center
-                                    justify-content-between
-                                  "
-                                >
-                                <div class="d-flex align-items-center">
-                                    <i class="fas fa-phone-alt me-3"></i>
-                                    <p class="m-0">Incoming call sounds</p>
-                                  </div>
-                                  <div class="form-check form-switch m-0">
-                                    <input
-                                      class="form-check-input"
-                                      type="checkbox"
-                                      id="flexSwitchCheckChecked"
-                                      checked
-                                    />
-                                    <label
-                                      class="form-check-label"
-                                      for="flexSwitchCheckChecked"
-                                    ></label>
-                                  </div>
+
+                        <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel"
+                            aria-hidden="true" data-bs-backdrop="false">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <div class="modal-header align-items-center">
+                                        <h5 class="text-dark text-center w-100 m-0" id="exampleModalLabel">Create Post
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="my-1 p-1">
+                                            <div class="d-flex flex-colomn">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="p-2">
+                                                        <img src="Icons/p4.jpg" alt="picture" class="rounded-circle"
+                                                            style="width: 30px; height: 30px; object-fit: cover;">
+                                                    </div>
+                                                    <div>
+                                                        <p class="m-0 fw-bold">Brigette</p>
+                                                        <select class="form-select border-0 bg-gray w-75 fs-7 me-2">
+                                                            <option value="public">Public</option>
+                                                            <option value="Pin To Top">Pin To Top</option>
+                                                            <option value="Hide">Hide</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <textarea id="" cols="30" rows="5"
+                                                        class="form-control border-0"></textarea>
+                                                </div>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <img src="Icons/wheel.png" alt="bpicture" type="button"
+                                                        style="width: 20px; height: 20px; object-fit: cover;">
+                                                    <i class="far fa-laugh-wink fs-5 text-muted" type="button"></i>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-between border border-1 border-light rounded p-3 mt-3">
+                                                    <p class="m-0">Add to your post</p>
+                                                    <div>
+                                                        <i class="fas fa-image fs-5 text-success mx-1"
+                                                            type="button"></i>
+                                                        <i class="fas fa-user-checkfs-5 text-success mx-1"
+                                                            type="button"></i>
+                                                        <i class="fas fa-smile fs-5 text-success mx-1"
+                                                            type="button"></i>
+                                                        <i class="fas fa-map-marker fs-5 text-success mx-1"
+                                                            type="button"></i>
+                                                        <i class="fas fa-ellipsis-h fs-5 text-success mx-1"
+                                                            type="button"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary w-100">Post</button>
+                                    </div>
                                 </div>
-                              </li>  
-                              <li>
-                                <div
-                                  class="
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-center flex-column flex-lg-row mt-3">
+                            <div class="d-flex align-items-center rounded dropdown-item" type="button">
+                                <i class="fas fa-video me-2 text-danger"></i>
+                                <p class="m-0 text-muted">Live Video</p>
+                            </div>
+                            <div class="d-flex align-items-center rounded dropdown-item" type="button">
+                                <i class="fas fa-photo-video me-2 text-success"></i>
+                                <p class="m-0 text-muted">Photo/Video</p>
+                            </div>
+                            <div class="d-flex align-items-center rounded dropdown-item" type="button">
+                                <i class="fas fa-smile me-2 text-warning"></i>
+                                <p class="m-0 text-muted">Feeling/Activity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow mt-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2"
+                                    style="width: 38px; height: 38px; object-fit: cover;">
+                                <div>
+                                    <p class="m-0 fw-bold">Brigette</p>
+                                    <span class="text-muted.fs-7">10h</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                id="post1Menu"></i>
+                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
+                                <li class="d-flex align-items-center">
+                                    <a href="#"
+                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                        Edit Post
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="#"
+                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                        Delete Post
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sed reiciendis
+                                    est corporis voluptatibus vero a illo aperiam adipisci eius error molestias
+                                    suscipit, laudantium commodi rerum ad tempore! Consequuntur, molestiae?</p>
+                                <img src="Icons/p20.jpg" alt="picture" style="max-width: 100%; height: auto;">
+                            </div>
+                            <div class="position-relative mt-3 post__comment">
+
+                                <div class="d-flex align-items-center position-absolute top-0 start-2"
+                                    style="height: 50px; z-index: 5;">
+                                    <div class="me-2">
+                                        <i class="fas fa-thumbs-up text-primary"></i>
+                                        <i class="fab fa-gratipay text-danger"></i>
+                                        <i class="fas fa-grin-squint text-warning"></i>
+                                    </div>
+                                    <p class="m-0 text-muted fs-7">Linda, John and 10k others</p>
+                                </div>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item border-0">
+
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <div class="accordion-button collapsed d-flex justify-content-end"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#post1"
+                                                aria-expanded="true" aria-controls="post1">
+                                                <p class="m-0">4 comments</p>
+                                            </div>
+                                        </h2>
+                                        <!--lik and share bar-->
+                                        <div class="d-flex justify-content-around">
+                                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1"
+                                                type="button">
+                                                <i class="fas fa-thumbs-up me-3"></i>
+                                                <p class="m-0">Like</p>
+                                            </div>
+
+                                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#post1"
+                                                aria-expanded="true" aria-controls="post1">
+                                                <i class="fas fa-comment-alt me-3"></i>
+                                                <p class="m-0">Comment</p>
+                                            </div>
+                                        </div>
+
+                                        <!--Comments-->
+                                        <div id="post1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+
+                                                <div class="d-flex align-items-center my-1">
+                                                    <img src="Icons/p4.jpg" alt="picture" class="rounded-circle me-2"
+                                                        style="width: 38px;height: 38px;object-fit: cover;">
+
+                                                    <div class="p-3 rounded w-100 comment__ input">
+                                                        <div class="d-flex justify-content-end">
+                                                            <i class="fas fa-ellipsis-h" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow"
+                                                                aria-labelledby="post1Menu">
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Edit
+                                                                    </a>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Delete
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="fw-bold m-0">Brigette</p>
+                                                        <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit
+                                                            amet consectetur adipisicing elit. Enim!</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="d-flex align-items-center my-1">
+                                                    <img src="Icons/p5.jpg" alt="picture" class="rounded-circle me-2"
+                                                        style="width: 38px;height: 38px;object-fit: cover;">
+
+                                                    <div class="p-3 rounded w-100 comment__ input">
+                                                        <div class="d-flex justify-content-end">
+                                                            <i class="fas fa-ellipsis-h" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow"
+                                                                aria-labelledby="post1Menu">
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Reply
+                                                                    </a>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Delete
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="fw-bold m-0">Hazel Snow</p>
+                                                        <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit
+                                                            amet consectetur adipisicing elit. Enim!</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="d-flex align-items-center my-1">
+                                                    <img src="Icons/p2.jpg" alt="picture" class="rounded-circle me-2"
+                                                        style="width: 38px;height: 38px;object-fit: cover;">
+
+                                                    <div class="p-3 rounded w-100 comment__ input">
+                                                        <div class="d-flex justify-content-end">
+                                                            <i class="fas fa-ellipsis-h" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow"
+                                                                aria-labelledby="post1Menu">
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Reply
+                                                                    </a>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Delete
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="fw-bold m-0">John Doe</p>
+                                                        <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit
+                                                            amet consectetur adipisicing elit. Enim!</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <form class="form d-flex my-1">
+                                                    <div>
+                                                        <img src="Icons/p4.jpg" alt="picture"
+                                                            class="rounded-circle me-2"
+                                                            style="width: 38px;height: 38px;object-fit: cover;">
+                                                    </div>
+                                                    <input type="text"
+                                                        class="form-control border-0 rounded-pill bg-gray"
+                                                        placeholder="Write a comment">
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end of accord-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow mt-3">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <img src="Icons/p15.jpg" alt="picture" class="rounded-circle me-2"
+                                    style="width: 38px; height: 38px; object-fit: cover;">
+                                <div>
+                                    <p class="m-0 fw-bold">Susan Tuks</p>
+                                    <span class="text-muted.fs-7">5h</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-ellipsis-h" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                id="post1Menu"></i>
+                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="post1Menu">
+                                <li class="d-flex align-items-center">
+                                    <a href="#"
+                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                        Edit Post
+                                    </a>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <a href="#"
+                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                        Delete Post
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-3">
+                            <div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae sed reiciendis
+                                    est corporis voluptatibus vero a illo aperiam adipisci eius error molestias
+                                    suscipit, laudantium commodi rerum ad tempore! Consequuntur, molestiae?</p>
+                                <img src="Icons/p17.jpg" alt="picture" style="max-width: 100%; height: auto;">
+                            </div>
+                            <div class="position-relative mt-3 post__comment">
+
+                                <div class="d-flex align-items-center position-absolute top-0 start-2"
+                                    style="height: 50px; z-index: 5;">
+                                    <div class="me-2">
+                                        <i class="fas fa-thumbs-up text-primary"></i>
+                                        <i class="fab fa-gratipay text-danger"></i>
+                                        <i class="fas fa-grin-squint text-warning"></i>
+                                    </div>
+                                    <p class="m-0 text-muted fs-7">Lucky, Hazel and 100k others</p>
+                                </div>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item border-0">
+
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <div class="accordion-button collapsed d-flex justify-content-end"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#post1"
+                                                aria-expanded="true" aria-controls="post1">
+                                                <p class="m-0">4 comments</p>
+                                            </div>
+                                        </h2>
+                                        <!--lik and share bar-->
+                                        <div class="d-flex justify-content-around">
+                                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1"
+                                                type="button">
+                                                <i class="fas fa-thumbs-up me-3"></i>
+                                                <p class="m-0">Like</p>
+                                            </div>
+
+                                            <div class="d-flex align-items-center justify-content-center dropdown-item rounded text-muted p-1"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#post1"
+                                                aria-expanded="true" aria-controls="post1">
+                                                <i class="fas fa-comment-alt me-3"></i>
+                                                <p class="m-0">Comment</p>
+                                            </div>
+                                        </div>
+
+                                        <!--Comments-->
+                                        <div id="post1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+
+                                                <div class="d-flex align-items-center my-1">
+                                                    <img src="Icons/p15.jpg" alt="picture" class="rounded-circle me-2"
+                                                        style="width: 38px;height: 38px;object-fit: cover;">
+
+                                                    <div class="p-3 rounded w-100 comment__ input">
+                                                        <div class="d-flex justify-content-end">
+                                                            <i class="fas fa-ellipsis-h" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow"
+                                                                aria-labelledby="post1Menu">
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Edit
+                                                                    </a>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Delete
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="fw-bold m-0">Susan Tuks</p>
+                                                        <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit
+                                                            amet consectetur adipisicing elit. Enim!</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="d-flex align-items-center my-1">
+                                                    <img src="Icons/p16.jpg" alt="picture" class="rounded-circle me-2"
+                                                        style="width: 38px;height: 38px;object-fit: cover;">
+
+                                                    <div class="p-3 rounded w-100 comment__ input">
+                                                        <div class="d-flex justify-content-end">
+                                                            <i class="fas fa-ellipsis-h" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow"
+                                                                aria-labelledby="post1Menu">
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Reply
+                                                                    </a>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Delete
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="fw-bold m-0">Lucky M</p>
+                                                        <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit
+                                                            amet consectetur adipisicing elit. Enim!</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="d-flex align-items-center my-1">
+                                                    <img src="Icons/p2.jpg" alt="picture" class="rounded-circle me-2"
+                                                        style="width: 38px;height: 38px;object-fit: cover;">
+
+                                                    <div class="p-3 rounded w-100 comment__ input">
+                                                        <div class="d-flex justify-content-end">
+                                                            <i class="fas fa-ellipsis-h" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                            <ul class="dropdown-menu border-0 shadow"
+                                                                aria-labelledby="post1Menu">
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Reply
+                                                                    </a>
+                                                                </li>
+                                                                <li class="d-flex align-items-center">
+                                                                    <a href="#"
+                                                                        class="dropdown-item d-flex align-items-center justify-content-around fs-7">
+                                                                        Delete
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="fw-bold m-0">Brigette J</p>
+                                                        <p class="m-0 fs-7 bg-gray p-2 rounded">Lorem ipsum dolor sit
+                                                            amet consectetur adipisicing elit. Enim!</p>
+                                                    </div>
+
+                                                </div>
+
+                                                <form class="form d-flex my-1">
+                                                    <div>
+                                                        <img src="Icons/p17.jpg" alt="picture"
+                                                            class="rounded-circle me-2"
+                                                            style="width: 38px;height: 38px;object-fit: cover;">
+                                                    </div>
+                                                    <input type="text"
+                                                        class="form-control border-0 rounded-pill bg-gray"
+                                                        placeholder="Write a comment">
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end of accord-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>div
+                <div class="leftbar col-md-3">
+                    <div class=" d-xxl-block h-100 fixed-top end-0 overflow-scroll"
+                        style="max-width: 325px; width: 100%;z-index: 4; padding-top: 56px; left: initial !important;">
+                        <div class="p-3 mt-4">
+                            <h6 class="text-muted fs-5 m-0">Birthdays</h6>
+                            <li class="dropdown-item my-2 d-flex justify-content-between">
+                                <div class="div d-flex align-items-center dropdown-item p-0 m-0">
+                                    <div class="p-2">
+                                        <img src="Icons/gift.png" alt="messenger"
+                                            style="width: 38px; height: 38px; object-fit: cover;">
+                                    </div>
+                                    <div>
+                                        <p class="m-0"><strong>Kim Berry</strong> and <strong>20 others</strong><br>
+                                            have their birthdays today. </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <hr class="m-0">
+                        <div class="d-flex align-items-center justify-content-between my-3">
+                            <h6 class="text-muted fs-5 m-0">Contacts</h6>
+                            <div class="text-muted">
+                                <i class="fas fa-search mx-2" type="button"></i>
+                                <i class="fas fa-ellipsis-h pointer text-muted mx-2" type="button"
+                                    data-bs-toggle="dropdown"></i>
+                                <ul class="dropdown-menu shadow" style="width: 18em">
+                                    <div class="p-2">
+                                        <h5>Chat Settings</h5>
+                                        <span class="text-muted fs-7">Customize your Messenger experience.</span>
+                                    </div>
+                                    <hr />
+                                    <li>
+                                        <div class="
                                     dropdown-item
                                     d-flex
                                     align-items-center
                                     justify-content-between
-                                  "
-                                >
-                                <div class="d-flex align-items-center">
-                                    <i class="fas fa-spinner me-3"></i>
-                                    <p class="m-0">Pop-up new messages</p>
-                                  </div>
-                                  <div class="form-check form-switch m-0">
-                                    <input
-                                      class="form-check-input"
-                                      type="checkbox"
-                                      id="flexSwitchCheckChecked"
-                                      checked
-                                    />
-                                    <label
-                            class="form-check-label"
-                            for="flexSwitchCheckChecked"
-                          ></label>
-                        </div>
-                      </div>
-                    </li>
-                    <hr class="m-0" />
-                    <li>
-                        <div
-                          class="
+                                  ">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-phone-alt me-3"></i>
+                                                <p class="m-0">Incoming call sounds</p>
+                                            </div>
+                                            <div class="form-check form-switch m-0">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="flexSwitchCheckChecked" checked />
+                                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="
+                                    dropdown-item
+                                    d-flex
+                                    align-items-center
+                                    justify-content-between
+                                  ">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-spinner me-3"></i>
+                                                <p class="m-0">Pop-up new messages</p>
+                                            </div>
+                                            <div class="form-check form-switch m-0">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="flexSwitchCheckChecked" checked />
+                                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <hr class="m-0" />
+                                    <li>
+                                        <div class="
                             dropdown-item
                             d-flex
                             align-items-center
                             justify-content-between
-                          "
-                        >
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-toggle-off me-3"></i>
-                            <p class="m-0">Turn Off Active Status</p>
-                          </div>
+                          ">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-toggle-off me-3"></i>
+                                                <p class="m-0">Turn Off Active Status</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                </a>
+                                </li>
+                            </div>
+                            </ul>
                         </div>
-                      </li>
-                        </ul>
-                     
-                            </a>
-                         </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p5.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p7.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p8.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p9.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p10.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p12.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p13.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p14.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p15.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p16.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p17.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+                        <li class="dropdown-item rounded my-2 px-0" type="button">
+                            <div class="d-flex align-items-center mx-2">
+                                <div class="position-relative">
+                                    <img src="Icons/p18.jpg" alt="picture" class="rounded-circle me-2"
+                                        style="width: 38px; height: 38px; object-fit: cover;">
+                                    <span
+                                        class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1"
+                                        style="left: 75%;">
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </div>
+                                <p class="m-0">Lovebright Joe</p>
+                            </div>
+                        </li>
+
                     </div>
-                    </ul>
-                </div>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p5.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p7.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p8.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p9.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p10.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p12.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p13.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p14.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p15.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p16.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p17.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
-                  <li class="dropdown-item rounded my-2 px-0" type="button">
-                    <div class="d-flex align-items-center mx-2">
-                        <div class="position-relative">
-                            <img src="Icons/p18.jpg" alt="picture" class="rounded-circle me-2" style="width: 38px; height: 38px; object-fit: cover;">
-                            <span class="position-absolute bottom-0 translate-middle border border-light rounded-circle bg-success p-1" style="left: 75%;">
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </div>
-                        <p class="m-0">Lovebright Joe</p>
-                    </div>
-                  </li>
 
                 </div>
-           
         </div>
     </div>
-</div>
 
 </body>
 <footer>
@@ -967,4 +1099,5 @@
 
 
 </footer>
+
 </html>
